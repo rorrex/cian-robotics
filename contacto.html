@@ -43,21 +43,29 @@
   <div>
     <h3>Formulario de contacto</h3>
     <form>
-      
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <fieldset>
+        <legend>Por favor, rellene todos los campos requeridos.</legend>
 
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" name="telefono">
+      <legend>Datos Personales</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" placeholder="Tu Nombre"  autofocus  maxlength="35" id="nombre" name="nombre" required>
+
+      <label for="teléfono">Teléfono:</label>
+      <input type="tel" placeholder="Tu teléfono" maxlength="10" id="telefono" name="telefono" required>
 
       <label for="correo">Correo:</label>
-      <input type="email" id="correo" name="correo" required>
+      <input type="email" placeholder="Tu email" id="correo" name="correo" required>
 
+
+      <legend>Asunto</legend>
       <label for="asunto">Asunto:</label>
-      <input type="text" id="asunto" name="asunto">
+      <input type="text" placeholder="Motivo del contacto" id="asunto" name="asunto">
 
       <label for="mensaje">Texto:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      <textarea placeholder="Tu mensaje" maxlength="150" id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      </fieldset>
+      
 
       <button type="submit" class="btn-submit">Enviar</button>
     </form>
