@@ -1,8 +1,11 @@
 /*Custom Porperties*/
 :root{
   --color_blanco: #f5f5f5;
-  --color_oscuro: #333333;
-  --color_primario: #00bcd4;
+  --color_oscuro: #040404;
+  --color_gunmetal: #0B262B;
+  --color_midnight_green: #114852;
+  --color_teal: #008080;
+  --color_verdigris: #00b1b1;
 }
 
 html{
@@ -17,12 +20,16 @@ body {
 }
 
 header {
+  background-color: var(--color_verdigris);
+  padding: .5rem 3rem;
+  color: var(--color_blanco);
+}
+
+.contenedor-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #00bcd4;
-  padding: .5rem 3rem;
-  color: white;
+
 }
 
 /*header .logo {
