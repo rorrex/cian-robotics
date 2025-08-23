@@ -10,12 +10,15 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preload" href="css/style.css" as="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Animejs version 3.2.2 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
 </head>
 
 <body>
   <!-- Encabezado -->
   <header class="contenedor-flex">
-  <!-- <div class="logo">CIAN Robotics</div> -->
     <img class="logo" src="img/LOGO.png" alt="logo-cian-robotics" width="150">
     <nav class="navegacion-principal">
       <a href="index.html">Inicio</a>
@@ -24,7 +27,6 @@
       <a href="contacto.html">Contacto</a>
     </nav>
   </header>
-
 
   <!-- Sección Hero -->
   <section class="hero" id="inicio">
@@ -35,15 +37,13 @@
   </section>
 
   <!-- Objetivos y Visión -->
-  <section class="productos" >
-
-    <h2 id="Objetivos" >Objetivos y Vision</h2>
+  <section class="productos">
+    <h2 id="Objetivos">Objetivos y Visión</h2>
     <div class="cards">
       <div class="card">
         <img src="img/hero.png" alt="Sistema de Robots">
         <h3>Objetivos</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus reprehenderit repudiandae saepe, repellendus totam odio accusantium tempora rem dignissimos obcaecati quia illum</p>
-      
       </div>
 
       <div class="card">
@@ -56,7 +56,6 @@
 
   <!-- productos -->
   <section class="oferta">
-    
     <ul class="productos_oferta"> 
       <li>Explicación y relación entre productos ofertados y las soluciones que ofrecen</li>
       <li>Estaciones de carga para autos eléctricos.</li>
@@ -64,7 +63,6 @@
       <li>Brazos robóticos.</li>
       <li>Máquinas CNCs para Corte Láser y Fresado.</li>
     </ul>
-
   </section>
 
   <!-- Pie de página -->
@@ -72,6 +70,9 @@
     <p>&copy; 2025 CIAN Robotics - Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="js/script.js"></script>
+  <script src="js/animations.js"></script>
+
 </body>
 </html>

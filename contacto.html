@@ -4,13 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIAN Robotics</title>
+  
+  <!-- Styles -->
+  <link rel="preload" href="css/normalize.css" as="style"> 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="css/style.css" as="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Animejs version 3.2.2 CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
 </head>
+
 <body>
   <!-- Encabezado -->
-  <header>
-    <div class="logo">CIAN Robotics</div>
-    <nav>
+  <header class="contenedor-flex">
+    <img class="logo" src="img/LOGO.png" alt="logo-cian-robotics" width="150">
+    <nav class="navegacion-principal">
       <a href="index.html">Inicio</a>
       <a href="productos.html">Productos</a>
       <a href="noticias.html">Noticias</a>
@@ -26,6 +36,7 @@
     </div>
   </section>
 
+  <!-- Contacto -->
 <section class="contact-section">
   
   <!-- Publicación de Instagram -->
@@ -35,8 +46,6 @@
             data-instgrm-version="14">
     </blockquote>
     <script async src="//www.instagram.com/embed.js"></script>
-
-
   </div>
 
   <!-- Formulario de contacto -->
@@ -87,6 +96,8 @@
     <p>&copy; 2025 CIAN Robotics - Todos los derechos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
