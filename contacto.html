@@ -37,59 +37,56 @@
   </section>
 
   <!-- Contacto -->
-<section class="contact-section">
-  
-  <!-- Publicación de Instagram -->
-  <div>
-    <blockquote class="instagram-media" 
-            data-instgrm-permalink="https://www.instagram.com/cian_robotics/" 
-            data-instgrm-version="14">
-    </blockquote>
-    <script async src="//www.instagram.com/embed.js"></script>
-  </div>
-
-  <!-- Formulario de contacto -->
-  <div>
-    <h3>Mensaje</h3>
-    <form autocomplete="on">
-      <fieldset>
-        <legend>Por favor, rellene todos los campos requeridos.</legend>
-
-      <legend>Datos Personales</legend>
-      <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" placeholder="Tu Nombre"  autofocus  maxlength="35" id="nombre" name="nombre" required>
+  <section class="contact-section">
+    <!-- Contenedor centrado para Instagram y Formulario -->
+    <div class="contact-centered-container">
+      <!-- Publicación de Instagram -->
+      <div class="instagram-container">
+        <blockquote class="instagram-media" 
+                data-instgrm-permalink="https://www.instagram.com/cian_robotics/" 
+                data-instgrm-version="14">
+        </blockquote>
       </div>
 
-      <div>
-        <label for="teléfono">Teléfono:</label>
-        <input type="tel" placeholder="Tu teléfono" maxlength="10" id="telefono" name="telefono" required>
+      <!-- Formulario de contacto -->
+      <div class="form-container">
+        <h3>Mensaje</h3>
+        <form autocomplete="on">
+          <fieldset>
+            <legend>Por favor, rellene todos los campos requeridos.</legend>
+
+            <legend>Datos Personales</legend>
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" placeholder="Tu Nombre" autofocus maxlength="35" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+              <label for="teléfono">Teléfono:</label>
+              <input type="tel" placeholder="Tu teléfono" maxlength="10" id="telefono" name="telefono" required>
+            </div>
+
+            <div>
+              <label for="correo">Correo:</label>
+              <input type="email" placeholder="Tu email" id="correo" name="correo" required>
+            </div>
+
+            <div>
+              <label for="asunto">Asunto:</label>
+              <input type="text" placeholder="Motivo del contacto" id="asunto" name="asunto">
+            </div>
+            
+            <div>
+              <label for="mensaje"></label>
+              <textarea placeholder="Tu mensaje" maxlength="150" id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+          </fieldset>
+          
+          <button type="submit" class="btn-submit">Enviar</button>
+        </form>
       </div>
-
-      <div>
-        <label for="correo">Correo:</label>
-        <input type="email" placeholder="Tu email" id="correo" name="correo" required>
-      </div>
-
-      <div>
-        <label for="asunto">Asunto:</label>
-        <input type="text" placeholder="Motivo del contacto" id="asunto" name="asunto">
-      </div>
-      
-      <div>
-        <label for="mensaje"></label>
-        <textarea placeholder="Tu mensaje" maxlength="150" id="mensaje" name="mensaje" rows="5" required></textarea>
-      </div>
-
-      </fieldset>
-      
-
-      <button type="submit" class="btn-submit">Enviar</button>
-    </form>
-  </div>
-
-</section>
-
+    </div>
+  </section>
 
   <!-- Pie de página -->
   <footer>
@@ -99,5 +96,6 @@
   <!-- Scripts -->
   <script src="js/script.js"></script>
   <script src="js/animations.js"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>

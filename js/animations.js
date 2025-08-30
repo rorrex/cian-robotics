@@ -127,13 +127,41 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // 7. Animación contacto
+function setupContactAnimations() {
+    const instagramContainer = document.querySelector('.instagram-container');
+    const formContainer = document.querySelector('.form-container');
+    
+    if (formContainer) {
+        anime({
+            targets: formContainer,
+            translateY: [100, 0],
+            opacity: [0, 1],
+            duration: 1200,
+            easing: 'easeOutQuad',
+            delay: 300
+        });
+    }
+    
+    if (instagramContainer) {
+        anime({
+            targets: instagramContainer,
+            translateY: [100, 0],
+            opacity: [0, 1],
+            duration: 1200,
+            easing: 'easeOutQuad',
+            delay: 500
+        });
+    }
+}
+
+if (document.querySelector('.contact-section')) {
+    setTimeout(setupContactAnimations, 100);
+}
+
     // Inicializar animaciones con Intersection Observer
     setTimeout(() => {
         setupCardsAnimation();
         setupProductsAnimation();
     }, 100);
-
-    // Verificar la versión de Anime.js en consola
-    console.log('✅ Anime.js v' + anime.version + ' cargado correctamente');
-    console.log('✅ Animaciones con Intersection Observer configuradas');
 });
